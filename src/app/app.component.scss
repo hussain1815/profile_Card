@@ -1,0 +1,61 @@
+*{
+    margin: 0px ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.profile_card{
+    background-color: #f4f4f4;
+}
+.card{
+    max-width: 370px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow:  0  5px 10px  rgba(0,0,0,0.5);
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: aqua;
+
+}
+.image .profile_image{
+height: 100%;
+width: 100%;
+border-radius: 50%;
+border: 3px solid white;
+object-fit: cover;
+}
+.text-data{
+    display: flex;
+    flex-direction: column;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.media-buttons .link{
+    text-decoration: none;
+    margin: 0 8px ;
+    height: 35px;
+    width: 35px;
+    background-color: aqua;
+    // display: flex;
+    // flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffff;
+}

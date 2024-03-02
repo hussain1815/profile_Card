@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'profilecard';
+  constructor() { }
+
+  ngOnInit(): void {
+    // Test Bootstrap initialization
+    console.log('Bootstrap initialized');
+  }
 }

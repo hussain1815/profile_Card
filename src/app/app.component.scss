@@ -7,6 +7,7 @@
 .profile_card{
     background-color: #f4f4f4;
 }
+
 .card{
     max-width: 370px;
     width: 100%;
@@ -14,6 +15,12 @@
     border-radius: 25px;
     padding: 25px;
     box-shadow:  0  5px 10px  rgba(0,0,0,0.5);
+}
+.card::before{
+    position:absolute;
+    height: 50%;
+    width: 100%;
+    background-color: #407074;
 }
 
 .image{
@@ -51,11 +58,46 @@ object-fit: cover;
     height: 35px;
     width: 35px;
     background-color: aqua;
-    // display: flex;
+    display: flex;
     // flex-direction: row;
     font-size: 18px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: #ffff;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #ffff;
+    border:none;
+    border-radius: 25px;
+    margin: 0 10px;
+    padding: 8px 25px;
+    background-color: #407074;
+    transition: all 0.3 ease;
+}
+.buttons .button:hover{
+    background-color: #0e4b71;
+}
+.analaytics .data{
+display: flex;
+align-items: center;
+padding: 0 20px;
+border-right: 2px solid #e7e7e7;
+
+}
+.data:last-child{
+    border-right: none;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 10px;
 }
